@@ -21,3 +21,18 @@ sock.send(delimiter)
 print('%sreceived%s' % ('-'*20, '-'*20))
 http_response = sock.recv(4096)
 print(http_response)
+
+
+# connected to 111.13.101.208
+# --------------------received--------------------
+# HTTP/1.1 200 OK
+# Date: Tue, 01 Nov 2016 13:45:32 GMT
+# Server: Apache
+# Last-Modified: Tue, 12 Jan 2010 13:48:00 GMT
+# ETag: "51-47cf7e6ee8400"
+# Accept-Ranges: bytes
+# Content-Length: 81
+# Cache-Control: max-age=86400
+# Expires: Wed, 02 Nov 2016 13:45:32 GMT
+# Connection: Keep-Alive
+# Content-Type: text/html
