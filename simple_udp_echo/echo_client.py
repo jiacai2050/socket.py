@@ -5,7 +5,7 @@ udp_server_addr = ('', 5500)
 
 if __name__ == '__main__':
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    data_to_sent = 'hello udp socket'
+    data_to_sent = 'hello udp socket'.encode('utf8')
     try:
         sent = sock.sendto(data_to_sent, udp_server_addr)
         data, server = sock.recvfrom(1024)

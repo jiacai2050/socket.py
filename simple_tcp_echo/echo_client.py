@@ -3,7 +3,7 @@ import socket
 
 if __name__ == '__main__':
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    data_to_sent = 'hello tcp socket'
+    data_to_sent = 'hello tcp socket'.encode('utf8')
     try:
         sock.connect(('', 5500))
 
@@ -12,4 +12,3 @@ if __name__ == '__main__':
     finally:
         sock.close()
         print('socket closed')
-
